@@ -85,10 +85,10 @@ WSGI_APPLICATION = 'dailyfresh.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'dailyfresh_bj18',
+        'NAME': 'dailyfresh',
         'USER': 'root',
         'PASSWORD': 'root',
-        'HOST': '172.16.179.142',
+        'HOST': '127.0.0.1',
         'PORT':3306,
     }
 }
@@ -131,11 +131,11 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.163.com'
 EMAIL_PORT = 25
 # 发送邮件的邮箱
-EMAIL_HOST_USER = 'hybpjx@163.com'
+EMAIL_HOST_USER = 'xxxxx@163.com'
 # 在邮箱中设置的客户端授权密码
-EMAIL_HOST_PASSWORD = 'admin*123'
+EMAIL_HOST_PASSWORD = 'xxxxx'
 # 收件人看到的发件人
-EMAIL_FROM = '天天生鲜<smartli_it@163.com>'
+EMAIL_FROM = '天天生鲜<hybpjx@163.com>'
 
 
 # Django的缓存配置
@@ -163,7 +163,7 @@ DEFAULT_FILE_STORAGE='utils.fdfs.storage.FDFSStorage'
 FDFS_CLIENT_CONF='./utils/fdfs/client.conf'
 
 # 设置fdfs存储服务器上nginx的IP和端口号
-FDFS_URL='http://172.16.179.131:8888/'
+FDFS_URL='http://127.0.0.1:8888/'
 
 # 全文检索框架的配置
 HAYSTACK_CONNECTIONS = {
