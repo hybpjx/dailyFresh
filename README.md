@@ -8,8 +8,11 @@
 
 
 > 本项目 pip安装东西包括但不局限于
+> 
 > celery jieba django django-redis Pillow pymysql uwsgi tinymce
+
 > 环境配置的内容有
+>
 > fastdfs mysql redis nginx 
 
 
